@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Nav from "./Nav";
 
 class Body extends Component{
     constructor(props){
@@ -14,9 +15,12 @@ class Body extends Component{
             this.setState({count: currentCount})
         }
         return(
-            <button type="button" class="btn btn-dark" onClick={increment}>
-                {this.state.count}
-            </button>
+            <React.Fragment>
+                <button type="button" class="btn btn-dark" onClick={increment}>
+                    {this.state.count}
+                </button>
+                <Nav count={this.state.count} incrementFunc={increment} />
+            </React.Fragment>
         )
     }
 

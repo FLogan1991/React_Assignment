@@ -1,5 +1,5 @@
 const Nav = (props) => {
-    const {incrementFunction, count} = props
+    const {incrementFunc, count} = props
     return(
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -20,7 +20,7 @@ const Nav = (props) => {
                 <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-                <button class="nav-link" aria-disabled="true" onClick={incrementFunction}>{count}</button>
+                <button class="nav-link" aria-disabled="true" onClick={incrementFunc}>{count}</button>
             </li>
         </ul>
         </div>
