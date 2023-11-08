@@ -19,7 +19,6 @@ class Body extends Component{
                 <button type="button" class="btn btn-dark" onClick={increment}>
                     {this.state.count}
                 </button>
-                <Nav count={this.state.count} incrementFunc={increment} />
             </React.Fragment>
         )
     }
