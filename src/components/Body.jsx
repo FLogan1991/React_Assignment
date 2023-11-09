@@ -9,6 +9,11 @@ class Body extends Component{
         }
     }
 
+    componentDidUpdate(prevProps, prevState){
+        console.log(prevState)
+        console.log(this.state)
+    }
+
     render(){
         const increment = () => {
             let currentCount = this.state.count + 1
