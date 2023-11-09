@@ -16,7 +16,7 @@ class Body extends Component{
         }
         return(
             <React.Fragment>
-                <button type="button" class="btn btn-dark" onClick={increment}>
+                <button type="button" className="btn btn-dark" onClick={increment}>
                     {this.state.count}
                 </button>
             </React.Fragment>
