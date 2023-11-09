@@ -14,13 +14,13 @@ function BodyHooks(){
 
     return(
         <>
-        <button type="button" className="btn btn-dark" onClick={() => {setCount(count + 1)}}>
-            {count}
-        </button>
+            <button type="button" className="btn btn-dark" onClick={() => {setCount(count + 1)}}>
+                {count}
+            </button>
 
-        <button type="button" className="btn btn-primary" onClick={() => {setCount(count2 + 1)}}>
-            {count2}
-        </button>
+            <button type="button" className="btn btn-primary" onClick={() => {setCount2(count2 + 10)}}>
+                {count2}
+            </button>
         </>
     )   
 }
